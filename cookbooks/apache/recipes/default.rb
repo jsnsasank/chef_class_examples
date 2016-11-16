@@ -15,7 +15,7 @@ service "httpd" do
 end
 
 
-timevar = Time.now
+timevar = Time.new.strftime("%Y-%m-%d %H:%M:%S")
 
 template "/var/www/html/index.html" do
   source "index.html.erb"
